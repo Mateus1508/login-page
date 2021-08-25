@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+body{
+    background: rgb(1, 32, 22);
+    color: rgb(51,251,202);
+    font-weight: 500;
+    display: flex;
+    min-height: 100vh;
+}
+
+main{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1{
+     color: rgb(51,251,202);
+     font-size: 3rem;
+     margin-bottom: 3rem;
+}
+
+main .social-media a {
+    text-decoration: none;
+}
+
+main .social-media {
+    display: flex;
+    align-content: center;
+
+}
+
+main .social-media img {
+ width: 36px;
+ margin-left: 3rem;
+}
+
+main .social-media a:first-child img {
+    margin-left: 0;
+}
+
+main .alternativa {
+    margin-top: 1rem;
+}
+
+main .alternativa span {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgb(255,255,255, 0.3);
+    position: relative;
+
+}
+
+main .alternativa span::before, main .alternativa span::after {
+position: absolute;
+content: '';
+height: 1px;
+width: 100px;
+bottom: 50%;
+background: rgb(255,255,255, 0.3);
+right: 50px;
+}
+main .alternativa span::after {
+    left: 50px;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+
+main form input {
+    background: rgb(191, 247, 234);
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline: none;
+    color: rgb(1, 32, 22);
+    font-size: 1.3rem;
+    border: 1px solid rgb(2, 83, 56);
+    border-radius: 8px;
+}
+
+main form input[type="submit"] {
+    cursor: pointer;
+    width: 50%;
+    margin-top: 4rem;
+    border: none;
+    border-radius: 32px;
+    background: rgb(47, 233, 186);
+    color: rgb(1, 32, 22);
+    font-size: 1.3rem;
+    transition: all .3s ease-in-out;
+}
+
+main form input[type="submit"]:hover {
+    background: rgb(35,177,145);
+}
+
+section.images {
+    display: flex;
+    align-items: flex-start;
+    padding: 4rem;  
+    
+}
+
+section.images img {
+    width: 100%;
+}
+
+div#ImgEx {  /* Exemplo de onde colocar a marca ou algo do tipo*/
+    background-position: right;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 20%;
+    bottom: 30%;
+    left: 60%; 
+    z-index: -1;
+    
+   
+    
+    
+    
+}
